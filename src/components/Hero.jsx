@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 const Section = styled.div`
   height: 100vh;
-  background-color: rebeccapurple;
+  scroll-snap-align: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: space-between;
 `;
 
 const Hero = () => {
