@@ -79,7 +79,6 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
           <Button>Hire Now</Button>
         </Icons>
