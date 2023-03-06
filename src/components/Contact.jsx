@@ -1,7 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 
+const Section = styled.div``;
 const Contact = () => {
-  return <div>Contact</div>;
+  return <Section>Contact</Section>;
 };
 
 export default Contact;
