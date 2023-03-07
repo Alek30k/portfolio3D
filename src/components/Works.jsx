@@ -65,6 +65,7 @@ const ListItem = styled.li`
     color: white;
     -webkit-text-stroke: 0px;
   }
+
   ::after {
     content: "${(props) => props.text}";
     position: absolute;
@@ -75,6 +76,7 @@ const ListItem = styled.li`
     overflow: hidden;
     white-space: nowrap;
   }
+
   &:hover {
     ::after {
       animation: moveText 0.5s linear both;
