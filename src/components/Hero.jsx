@@ -111,15 +111,15 @@ const Img = styled.img`
   margin: auto;
   animation: animate 2s infinite ease alternate;
 
-  // @media only screen and (max-width: 768px) {
-  //   width: 300px;
-  //   height: 300px;
-  // }
-  // @keyframes animate {
-  //   to {
-  //     transform: translateY(20px);
-  //   }
-  // }
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+  @keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }
 `;
 
 const Hero = () => {
