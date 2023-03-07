@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Section = styled.div`
   height: 100vh;
@@ -125,7 +127,6 @@ const Hero = () => {
     <Section>
       <Navbar />
       <Container>
-        {" "}
         <Left>
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
@@ -138,7 +139,7 @@ const Hero = () => {
           <Button>Learn More</Button>
         </Left>
         <Right>
-          <Canvas>
+          {/* <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
@@ -152,7 +153,7 @@ const Hero = () => {
                 />
               </Sphere>
             </Suspense>
-          </Canvas>
+          </Canvas> */}
           <Img src="./img/moon.png" />
         </Right>
       </Container>
