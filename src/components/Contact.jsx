@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import Map from "./Map";
 // import Map from "./Map";
@@ -82,13 +82,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "service_id",
-    //     "template_id",
-    //     ref.current,
-    //     "public_key"
-    //   )
+    emailjs.sendForm("service_id", "template_id", ref.current, "public_key");
     //   .then(
     //     (result) => {
     //       console.log(result.text);
