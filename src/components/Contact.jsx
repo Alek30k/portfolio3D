@@ -100,6 +100,7 @@ const Contact = () => {
     //     }
     //   );
   };
+
   return (
     <Section>
       <Container>
