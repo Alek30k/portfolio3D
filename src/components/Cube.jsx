@@ -6,7 +6,7 @@ const Cube = () => {
   const textRef = useRef();
   useFrame(
     (state) =>
-      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2)
+      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 4)
   );
   return (
     <mesh>
@@ -16,7 +16,7 @@ const Cube = () => {
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
           <color attach="background" args={["#dc9dcd"]} />
           <Text ref={textRef} fontSize={3} color="#555">
-            hello
+            Ale
           </Text>
         </RenderTexture>
       </meshStandardMaterial>
