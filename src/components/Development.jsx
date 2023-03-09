@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
-import { OrbitControls } from "@react-three/drei";
+import React from "react";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import styled from "styled-components";
 import Atom from "./Atom";
+import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
@@ -25,11 +25,11 @@ const Desc = styled.div`
 const Development = () => {
   return (
     <>
-      <Canvas camera={{ position: [0, 0, 10] }}>
-        <Suspense fallback={null}>
+      <Canvas>
+        <Stage environment="city" intensity={0.6}>
           <Atom />
-          <OrbitControls enableZoom={false} autoRotate />
-        </Suspense>
+        </Stage>
+        <OrbitControls enableZoom={false} />
       </Canvas>
       <Desc>
         We design products with a strong focus on both world class design and
