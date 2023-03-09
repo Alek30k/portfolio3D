@@ -71,10 +71,10 @@ const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
 
-  // @media only screen and (max-width: 768px) {
-  //   padding: 20px;
-  //   text-align: center;
-  // }
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`
@@ -92,11 +92,10 @@ const Right = styled.div`
   flex: 3;
   position: relative;
 
-  //   @media only screen and (max-width: 768px) {
-  //     flex: 1;
-  //     width: 100%;
-  //   }
-  //
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    width: 100%;
+  }
 `;
 
 const Img = styled.img`
