@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Shoe from "./Shoe";
+// import Shoe from "./Shoe";
 import styled from "styled-components";
+import Shoe from "./Shoe";
 
 const Desc = styled.div`
   width: 200px;

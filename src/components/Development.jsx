@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Atom from "./Atom";
 import styled from "styled-components";
+import Atom from "./Atom";
 
 const Desc = styled.div`
   width: 200px;
