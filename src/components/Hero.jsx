@@ -39,18 +39,18 @@ const Left = styled.div`
   justify-content: center;
   gap: 20px;
 
-  // @media only screen and (max-width: 768px) {
-  //   flex: 1;
-  //   align-items: center;
-  // }
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 74px;
 
-  // @media only screen and (max-width: 768px) {
-  //   text-align: center;
-  // }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 const WhatWeDo = styled.div`
