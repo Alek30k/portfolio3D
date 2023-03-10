@@ -65,6 +65,11 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`
