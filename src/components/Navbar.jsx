@@ -37,6 +37,7 @@ const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
