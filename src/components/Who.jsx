@@ -85,7 +85,7 @@ const Button = styled.button`
 
 const Who = () => {
   return (
-    <Section>
+    <Section id="studio">
       <Container>
         <Left>
           <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>

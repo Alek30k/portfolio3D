@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import Who from "./components/Who";
 import Works from "./components/Works";
 
@@ -20,6 +21,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <Navbar />
       <Hero />
       <Who />
       <Works />

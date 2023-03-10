@@ -4,6 +4,9 @@ import styled from "styled-components";
 const Section = styled.div`
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -29,6 +32,10 @@ const Links = styled.div`
   gap: 50px;
 `;
 
+const Home = styled.a`
+  height: 50px;
+`;
+
 const Logo = styled.img`
   height: 50px;
 `;
@@ -43,8 +50,10 @@ const List = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
+const ListItem = styled.a`
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 `;
 
 const Icons = styled.div`
@@ -73,16 +82,18 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/logo.png" />
+          <Home href="#home">
+            <Logo src="./img/logo.png" />
+          </Home>
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
-            <ListItem>Works</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem href="#home">Home</ListItem>
+            <ListItem href="#studio">Studio</ListItem>
+            <ListItem href="#works">Works</ListItem>
+            <ListItem href="#contact">Contact</ListItem>
           </List>
         </Links>
         <Icons>
-          <Icon src="./img/search.png" />
+          {/* <Icon src="./img/search.png" /> */}
           <Button>Hire Now</Button>
         </Icons>
       </Container>

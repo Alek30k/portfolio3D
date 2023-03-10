@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
@@ -124,8 +124,7 @@ const Img = styled.img`
 
 const Hero = () => {
   return (
-    <Section>
-      <Navbar />
+    <Section id="home">
       <Container>
         <Left>
           <Title>Think. Make. Solve.</Title>
