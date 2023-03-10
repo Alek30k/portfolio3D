@@ -42,6 +42,7 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     flex: 1;
     align-items: center;
+    margin-top: 40px;
   }
 `;
 
