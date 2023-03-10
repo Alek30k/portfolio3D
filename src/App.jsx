@@ -23,7 +23,7 @@ function App() {
       <Hero />
       <Who />
       <Works />
-      {/* <Contact /> */}
+      <Contact />
     </Container>
   );
 }
