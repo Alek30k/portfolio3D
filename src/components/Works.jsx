@@ -91,6 +91,9 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+  width: 60%;
+  height: 60%;
+  margin-left: 80px;
 `;
 
 const Works = () => {

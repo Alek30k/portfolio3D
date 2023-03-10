@@ -10,6 +10,8 @@ const Section = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
+    position: static;
+    margin-bottom: 30px;
   }
 `;
 
