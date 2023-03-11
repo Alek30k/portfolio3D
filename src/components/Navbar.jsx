@@ -64,8 +64,8 @@ const Icons = styled.div`
 `;
 
 const Avatar = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-top: 20px;
   border: none;
   border-radius: 50%;
@@ -89,7 +89,7 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          {/* <Icon src="./img/search.png" /> */}
+          Alejandro Cabrera
           <Avatar src="./img/ale.png" />
         </Icons>
       </Container>
