@@ -21,6 +21,8 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-direction: column;
+  gap: 10px;
 
   @media only screen and (max-width: 768px) {
     justify-content: center;
@@ -40,6 +42,19 @@ const Form = styled.form`
   @media only screen and (max-width: 768px) {
     width: 300px;
   }
+`;
+
+const Redes = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px;
+  gap: 15px;
+`;
+const Contactos = styled.a``;
+const Img = styled.img`
+  width: 50px;
+  height: 50px;
 `;
 
 const Input = styled.input`
@@ -106,7 +121,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
+            <Title>Have You Any Questions ?</Title>
             <Input placeholder="Name" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea
@@ -118,6 +133,20 @@ const Contact = () => {
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
+          <Redes>
+            <Contactos href="https://github.com/Alek30k">
+              <Img src="./img/github.png"></Img>
+            </Contactos>
+            <Contactos href="https://www.linkedin.com/in/alejandro-cabrera-7b13a7177/">
+              <Img src="./img/linkedin.png"></Img>
+            </Contactos>
+            <Contactos href="https://bit.ly/3CPWW1j">
+              <Img src="./img/WhatsApp_icon.png"></Img>
+            </Contactos>
+            <Contactos href="https://github.com/Alek30k">
+              <Img src="./img/github.png"></Img>
+            </Contactos>
+          </Redes>
         </Left>
         <Right>
           <Map />
