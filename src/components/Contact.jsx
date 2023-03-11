@@ -49,7 +49,7 @@ const Redes = styled.div`
   align-items: center;
   justify-content: center;
   margin: 30px 0px;
-  gap: 15px;
+  gap: 40px;
 `;
 const Contactos = styled.a``;
 const Img = styled.img`
@@ -134,17 +134,20 @@ const Contact = () => {
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
           <Redes>
-            <Contactos href="https://github.com/Alek30k">
+            <Contactos href="https://github.com/Alek30k" target="_blank">
               <Img src="./img/github.png"></Img>
             </Contactos>
-            <Contactos href="https://www.linkedin.com/in/alejandro-cabrera-7b13a7177/">
+            <Contactos
+              href="https://www.linkedin.com/in/alejandro-cabrera-7b13a7177/"
+              target="_blank"
+            >
               <Img src="./img/linkedin.png"></Img>
             </Contactos>
-            <Contactos href="https://bit.ly/3CPWW1j">
+            <Contactos href="https://bit.ly/3CPWW1j" target="_blank">
               <Img src="./img/WhatsApp_icon.png"></Img>
             </Contactos>
-            <Contactos href="https://github.com/Alek30k">
-              <Img src="./img/github.png"></Img>
+            <Contactos href="https://twitter.com/Alejandrok31k" target="_blank">
+              <Img src="./img/Twitter-logo.svg.png"></Img>
             </Contactos>
           </Redes>
         </Left>
