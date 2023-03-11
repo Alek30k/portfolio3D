@@ -82,7 +82,7 @@ const More = styled.p`
   background-color: red;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
@@ -91,6 +91,7 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
 `;
 
 const Right = styled.div`
@@ -149,15 +150,9 @@ const Hero = () => {
             {/* I am a person very committed to the activity to be developed, I like challenges and new learning, I consider myself a curious developer, working under pressure and working as a team. */}
           </Desc>
 
-          <Button>Download Cv</Button>
-          <div class="download-btn" hidden>
-            <a
-              href="./images/Cv-Full-Stack-Developer-Cabrera-Alejandro.pdf"
-              class=""
-            >
-              Download CV
-            </a>
-          </div>
+          <Button href="./Cv-Full-Stack-Developer-Alejandro-Cabrera.pdf">
+            Download Cv
+          </Button>
         </Left>
         <Right>
           <Canvas>
