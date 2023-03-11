@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-// import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
@@ -77,6 +76,12 @@ const Desc = styled.p`
   }
 `;
 
+const More = styled.p`
+  font-size: 24px;
+  color: lightgray;
+  background-color: red;
+`;
+
 const Button = styled.button`
   background-color: #da4ea2;
   color: white;
@@ -134,6 +139,7 @@ const Hero = () => {
             <Line src="./img/line.png" />
             <Subtitle>About me</Subtitle>
           </WhatWeDo>
+
           <Desc>
             I am a Full-Stack Developer, from Formosa, Argentina. I'm always
             willing to face new challenges, to improve or acquire new
@@ -142,7 +148,16 @@ const Hero = () => {
             experiences. */}
             {/* I am a person very committed to the activity to be developed, I like challenges and new learning, I consider myself a curious developer, working under pressure and working as a team. */}
           </Desc>
-          <Button>Learn More</Button>
+
+          <Button>Download Cv</Button>
+          <div class="download-btn" hidden>
+            <a
+              href="./images/Cv-Full-Stack-Developer-Cabrera-Alejandro.pdf"
+              class=""
+            >
+              Download CV
+            </a>
+          </div>
         </Left>
         <Right>
           <Canvas>
