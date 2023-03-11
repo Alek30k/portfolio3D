@@ -130,8 +130,7 @@ const Contact = () => {
               rows={10}
             />
             <Button type="submit">Send</Button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+            {success && "Your message has been sent. I'll contact you soon :)"}
           </Form>
           <Redes>
             <Contactos href="https://github.com/Alek30k" target="_blank">

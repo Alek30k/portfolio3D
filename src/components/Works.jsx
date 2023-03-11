@@ -94,6 +94,7 @@ const Right = styled.div`
   width: 60%;
   height: 60%;
   margin-left: 80px;
+  margin-top: 180px;
 `;
 
 const Works = () => {
