@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import styled from "styled-components";
 import Cube from "./Cube";
 import { OrbitControls } from "@react-three/drei";
@@ -83,7 +83,18 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const Modal = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+`;
+const Image = styled.img`
+  width: 110px;
+`;
+
 const Who = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <Section id="studio">
       <Container>
@@ -101,13 +112,22 @@ const Who = () => {
           <Title>Think outside the square space</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Who I am</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+            I consider myself a very curious and self-taught person who likes to
+            learn new technologies, I really want to contribute what I know and
+            incorporate new learning and face challenges!
           </Desc>
-          <Button>See our works</Button>
+          <Button onClick={() => setModal(!modal)}>Skills</Button>
+          {modal && (
+            <Modal>
+              <Image src="./img/js.png" />
+              <Image src="./img/html.png" />
+              <Image src="./img/js.png" />
+              <Image src="./img/js.png" />
+            </Modal>
+          )}
         </Right>
       </Container>
     </Section>

@@ -132,10 +132,15 @@ const Hero = () => {
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>About me</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            I am a Full-Stack Developer, from Formosa, Argentina. I'm always
+            willing to face new challenges, to improve or acquire new
+            habilities.
+            {/* we enjoy creating delightful, human-centered digital
+            experiences. */}
+            {/* I am a person very committed to the activity to be developed, I like challenges and new learning, I consider myself a curious developer, working under pressure and working as a team. */}
           </Desc>
           <Button>Learn More</Button>
         </Left>
