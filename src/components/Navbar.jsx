@@ -63,19 +63,14 @@ const Icons = styled.div`
   gap: 20px;
 `;
 
-const Icon = styled.img`
-  width: 20px;
-  cursor: pointer;
-`;
-
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #da4ea2;
-  color: white;
+const Avatar = styled.img`
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
+  object-fit: cover;
 `;
 
 const Navbar = () => {
@@ -88,14 +83,14 @@ const Navbar = () => {
           </Home>
           <List>
             <ListItem href="#home">Home</ListItem>
-            <ListItem href="#studio">Studio</ListItem>
+            <ListItem href="#studio">Who I am</ListItem>
             <ListItem href="#works">Works</ListItem>
             <ListItem href="#contact">Contact</ListItem>
           </List>
         </Links>
         <Icons>
           {/* <Icon src="./img/search.png" /> */}
-          <Button>Hire Now</Button>
+          <Avatar src="./img/ale.png" />
         </Icons>
       </Container>
     </Section>
