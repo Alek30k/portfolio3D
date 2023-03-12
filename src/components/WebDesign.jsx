@@ -22,6 +22,16 @@ const Desc = styled.div`
     margin: auto;
   }
 `;
+const Portfolio = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+const PortfolioItem = styled.img`
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+`;
 
 const WebDesign = () => {
   return (
@@ -38,6 +48,16 @@ const WebDesign = () => {
         We design products with a strong focus on both world class design and
         ensuring your product is a market success.
       </Desc>
+      <Portfolio>
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+        <PortfolioItem src="./img/bg.jpeg" />
+      </Portfolio>
     </>
   );
 };
