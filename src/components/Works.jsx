@@ -8,10 +8,10 @@ import SocialMedia from "./SocialMedia";
 
 const data = [
   "Web Design",
-  "Development",
-  "Illustration",
-  "ProductDesign",
+  "Ecommerce",
   "Social Media",
+  "Development",
+  "ProductDesign",
 ];
 
 const Works = () => {
@@ -36,7 +36,7 @@ const Works = () => {
             <Development />
           ) : work === "ProductDesign" ? (
             <ProductDesign />
-          ) : work === "Illustration" ? (
+          ) : work === "Ecommerce" ? (
             <Illustration />
           ) : (
             <SocialMedia />
