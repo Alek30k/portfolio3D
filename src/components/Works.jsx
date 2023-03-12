@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Development from "./Development";
+import Ilustration from "./Ilustration";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 
@@ -117,6 +118,10 @@ const Works = () => {
             <WebDesign />
           ) : work === "Development" ? (
             <Development />
+          ) : work === "ProductDesign" ? (
+            <ProductDesign />
+          ) : work === "Illustration" ? (
+            <Ilustration />
           ) : (
             <ProductDesign />
           )}
