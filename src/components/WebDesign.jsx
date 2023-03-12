@@ -2,7 +2,7 @@ import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import Osaka_silla from "./Osaka_silla";
+import Mac_laptop from "./Mac_laptop";
 
 const Desc = styled.div`
   width: 200px;
@@ -29,9 +29,9 @@ const WebDesign = () => {
       <Canvas>
         <Suspense fallback={null}>
           <Stage environment="city" intensity={0.6}>
-            <Osaka_silla />
+            <Mac_laptop />
           </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
+          <OrbitControls enableZoom={true} autoRotate />
         </Suspense>
       </Canvas>
       <Desc>
