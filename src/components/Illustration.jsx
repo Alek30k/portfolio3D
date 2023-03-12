@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Asus_notebook from "./Asus_notebook";
+import Lisa_simpson_cool_animated from "./Lisa_simpson_cool_animated";
 import styled from "styled-components";
 
 const Desc = styled.div`
@@ -28,7 +28,7 @@ const Illustration = () => {
     <>
       <Canvas>
         <Suspense fallback={null}>
-          <Asus_notebook />
+          <Lisa_simpson_cool_animated />
 
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
