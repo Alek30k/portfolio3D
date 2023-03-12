@@ -23,7 +23,7 @@ const Desc = styled.div`
   }
 `;
 
-const Ilustration = () => {
+const Illustration = () => {
   return (
     <>
       <Canvas>
@@ -41,4 +41,4 @@ const Ilustration = () => {
   );
 };
 
-export default Ilustration;
+export default Illustration;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Development from "./Development";
-import Ilustration from "./Ilustration";
+import Illustration from "./Illustration";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 import SocialMedia from "./SocialMedia";
@@ -10,7 +10,7 @@ const data = [
   "Web Design",
   "Development",
   "Illustration",
-  "Product Design",
+  "ProductDesign",
   "Social Media",
 ];
 
@@ -37,7 +37,7 @@ const Works = () => {
           ) : work === "ProductDesign" ? (
             <ProductDesign />
           ) : work === "Illustration" ? (
-            <Ilustration />
+            <Illustration />
           ) : (
             <SocialMedia />
           )}
