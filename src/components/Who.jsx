@@ -40,7 +40,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 
   @media only screen and (max-width: 768px) {
     align-items: center;
@@ -87,9 +87,23 @@ const Modal = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
 `;
 const Image = styled.img`
-  width: 110px;
+  width: 80px;
+`;
+
+const Skills = styled.button`
+  background-color: transparent;
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: start;
+  border: none;
+  cursor: pointer;
 `;
 
 const Who = () => {
@@ -119,13 +133,26 @@ const Who = () => {
             learn new technologies, I really want to contribute what I know and
             incorporate new learning and face challenges!
           </Desc>
-          <Button onClick={() => setModal(!modal)}>Skills</Button>
+          {modal ? (
+            <Skills onClick={() => setModal(false)}>X</Skills>
+          ) : (
+            <Button onClick={() => setModal(!modal)}>Skills</Button>
+          )}
           {modal && (
             <Modal>
               <Image src="./img/js.png" />
               <Image src="./img/html.png" />
-              <Image src="./img/js.png" />
-              <Image src="./img/js.png" />
+              <Image src="./img/css.png" />
+              <Image src="./img/boostrap.png" />
+              <Image src="./img/react.png" />
+              <Image src="./img/redux.png" />
+              <Image src="./img/node.png" />
+              <Image src="./img/express.png" />
+              <Image src="./img/git.png" />
+              <Image src="./img/insomnia.png" />
+              <Image src="./img/sql.png" />
+              <Image src="./img/mongo.png" />
+              <Image src="./img/postman.png" />
             </Modal>
           )}
         </Right>
