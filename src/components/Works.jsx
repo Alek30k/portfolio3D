@@ -4,6 +4,7 @@ import Development from "./Development";
 import Ilustration from "./Ilustration";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
+import SocialMedia from "./SocialMedia";
 
 const data = [
   "Web Design",
@@ -12,6 +13,41 @@ const data = [
   "Product Design",
   "Social Media",
 ];
+
+const Works = () => {
+  const [work, setWork] = useState("Web Design");
+
+  return (
+    <Section id="works">
+      <Container>
+        <Left>
+          <List>
+            {data.map((item) => (
+              <ListItem key={item} text={item} onClick={() => setWork(item)}>
+                {item}
+              </ListItem>
+            ))}
+          </List>
+        </Left>
+        <Right>
+          {work === "Web Design" ? (
+            <WebDesign />
+          ) : work === "Development" ? (
+            <Development />
+          ) : work === "ProductDesign" ? (
+            <ProductDesign />
+          ) : work === "Illustration" ? (
+            <Ilustration />
+          ) : (
+            <SocialMedia />
+          )}
+        </Right>
+      </Container>
+    </Section>
+  );
+};
+
+export default Works;
 
 const Section = styled.div`
   height: 100vh;
@@ -97,38 +133,3 @@ const Right = styled.div`
   margin-left: 80px;
   margin-top: 180px;
 `;
-
-const Works = () => {
-  const [work, setWork] = useState("Web Design");
-
-  return (
-    <Section id="works">
-      <Container>
-        <Left>
-          <List>
-            {data.map((item) => (
-              <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                {item}
-              </ListItem>
-            ))}
-          </List>
-        </Left>
-        <Right>
-          {work === "Web Design" ? (
-            <WebDesign />
-          ) : work === "Development" ? (
-            <Development />
-          ) : work === "ProductDesign" ? (
-            <ProductDesign />
-          ) : work === "Illustration" ? (
-            <Ilustration />
-          ) : (
-            <ProductDesign />
-          )}
-        </Right>
-      </Container>
-    </Section>
-  );
-};
-
-export default Works;
