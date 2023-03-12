@@ -26,7 +26,7 @@ export default function Model(props) {
         >
           <group
             name="2454d3fcf77545f6985fac83a4c58702fbx"
-            rotation={[Math.PI / 2, 0, 0]}
+            rotation={[Math.PI / 1, 0, 0]}
             scale={0.03}
           >
             <group name="Object_2">

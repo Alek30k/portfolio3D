@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
-import Shoe from "./Shoe";
+import Lisa_simpson_cool_animated from "./Lisa_simpson_cool_animated";
 
 const Desc = styled.div`
   width: 200px;
@@ -29,7 +29,7 @@ const ProductDesign = () => {
       <Canvas>
         <Suspense fallback={null}>
           <Stage environment="city" intensity={0.6}>
-            <Shoe />
+            <Lisa_simpson_cool_animated />
           </Stage>
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>

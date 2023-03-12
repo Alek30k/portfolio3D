@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Lisa_simpson_cool_animated from "./Lisa_simpson_cool_animated";
 import styled from "styled-components";
+import Shoe from "./Shoe";
 
 const Desc = styled.div`
   width: 200px;
@@ -28,8 +28,9 @@ const Illustration = () => {
     <>
       <Canvas>
         <Suspense fallback={null}>
-          <Lisa_simpson_cool_animated />
-
+          <Stage environment="city" intensity={0.6}>
+            <Shoe />
+          </Stage>
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
       </Canvas>
