@@ -93,7 +93,7 @@ const Modal = styled.div`
   padding: 20px;
 `;
 const Image = styled.img`
-  width: 80px;
+  width: 50px;
 `;
 
 const Skills = styled.button`
