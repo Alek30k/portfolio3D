@@ -22,34 +22,25 @@ import Shoe from "./Shoe";
 //     margin: auto;
 //   }
 // `;
-const Portfolio = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  position: relative;
-  background-color: green;
-`;
 
 const PortfolioItem = styled.div`
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
+  flex: 0 0 40.33%;
+  max-width: 40.33%;
   margin-bottom: 30px;
   border-radius: 10px;
 `;
 const Inner = styled.div`
-  border-radius: 10px;
+  // border-radius: 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   height: 500px;
-  background-color: red;
 
-  &:hover {
-    .Layer {
-      height: 100%;
-    }
-  }
+  // &:hover {
+  //   .Layer {
+  //     height: 100%;
+  //   }
+  // }
 `;
 const InnerImg = styled.div``;
 
@@ -65,7 +56,7 @@ const Item = styled.img`
 `;
 const Layer = styled.div`
   width: 100%;
-  height: 0%;
+  height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(211, 20, 52));
   position: absolute;
   color: #fff;
@@ -76,11 +67,24 @@ const Layer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
   text-align: center;
   transition: height 0.5s;
 `;
-const Title = styled.h3``;
+
+const Portfolio = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  background-color: green;
+
+  &:hover:before Layer {
+    background-color: blue;
+    color: yellow;
+  }
+`;
+const Title = styled.h2``;
 const Desc = styled.p``;
 const Enlace = styled.a``;
 
