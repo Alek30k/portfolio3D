@@ -34,7 +34,6 @@ const Inner = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  height: 500px;
 
   // &:hover {
   //   .Layer {
@@ -56,7 +55,7 @@ const Item = styled.img`
 `;
 const Layer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 50%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(211, 20, 52));
   position: absolute;
   color: #fff;
@@ -80,7 +79,6 @@ const Portfolio = styled.div`
   background-color: green;
 `;
 const Title = styled.h2``;
-const Desc = styled.p``;
 const Enlace = styled.a``;
 
 const Button = styled.button`
@@ -118,7 +116,7 @@ const ProductDesign = () => {
                 <Item src="./img/fiverr.png" alt="" />
                 <Layer>
                   <Title>Fiverr</Title>
-                  <Desc>React-Node.Js-Express-Hooks-MongoDB-Stripe</Desc>
+
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
                 </Layer>
               </InnerImg>
