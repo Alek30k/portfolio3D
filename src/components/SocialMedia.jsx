@@ -1,8 +1,8 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
-import Shoe from "./Shoe";
+import Social_media_hologram from "./Social_media_hologram";
 
 const Desc = styled.div`
   width: 200px;
@@ -24,20 +24,58 @@ const Desc = styled.div`
 `;
 
 const ProductDesign = () => {
+   const [portfolioOpen, setPortfolioOpen] = useState(false);
   return (
     <>
-      <Canvas>
+      {portfolioOpen?<Canvas>
         <Suspense fallback={null}>
           <Stage environment="city" intensity={0.6}>
-            <Shoe />
+            <Social_media_hologram />
           </Stage>
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
       </Canvas>
-      <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
-      </Desc>
+      :
+      <Portfolio>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/portfolio/fiverr.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/portfolio/booking.png" alt="" />
+                <Layer>
+                  <Title>Feisbuk</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/portfolio/appCLima.png" alt="" />
+                <Layer>
+                  <Title>WeatherApp</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+        </Portfolio>
+      )}
+
+      <Button onClick={() => setPortfolioOpen(!portfolioOpen)}>
+        PORTFOLIO
+      </Button>
     </>
   );
 };
