@@ -36,23 +36,22 @@ const PortfolioItem = styled.div`
   max-width: 33.33%;
   margin-bottom: 30px;
   border-radius: 10px;
-  // overflow: hidden;
-  // cursor: pointer;
-  // position: relative;
 `;
 const Inner = styled.div`
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
   position: relative;
-`;
-const InnerImg = styled.div`
+  cursor: pointer;
+  height: 500px;
+  background-color: red;
+
   &:hover {
-    layer {
+    .Layer {
       height: 100%;
     }
   }
 `;
+const InnerImg = styled.div``;
 
 const Item = styled.img`
   width: 100%;
@@ -60,9 +59,9 @@ const Item = styled.img`
   display: block;
   transition: transform 0.5s;
 
-  // &:hover {
-  //   transform: scale(1.1);
-  // }
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 const Layer = styled.div`
   width: 100%;
