@@ -4,25 +4,6 @@ import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 import Social_media_hologram from "./Social_media_hologram";
 
-const Desc = styled.div`
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 500px;
-  right: 100px;
-
-  @media only screen and (max-width: 768px) {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
-`;
-
 const PortfolioItem = styled.div`
   flex: 0 0 40.33%;
   max-width: 40.33%;
