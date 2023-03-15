@@ -23,15 +23,67 @@ import Shoe from "./Shoe";
 //   }
 // `;
 const Portfolio = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  background-color: green;
+`;
+
+const PortfolioItem = styled.div`
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  // overflow: hidden;
+  // cursor: pointer;
+  // position: relative;
+`;
+const Inner = styled.div`
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+`;
+const InnerImg = styled.div`
+  &:hover {
+    layer {
+      height: 100%;
+    }
+  }
+`;
+
+const Item = styled.img`
   width: 100%;
   height: 200px;
   display: block;
   transition: transform 0.5s;
+
+  // &:hover {
+  //   transform: scale(1.1);
+  // }
 `;
-const Item = styled.img`
-  width: 250px;
-  height: 150px;
+const Layer = styled.div`
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(211, 20, 52));
+  position: absolute;
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
 `;
+const Title = styled.h3``;
+const Desc = styled.p``;
+const Enlace = styled.a``;
 
 const Button = styled.button`
   background-color: #da4ea2;
@@ -62,7 +114,18 @@ const ProductDesign = () => {
         </Canvas>
       ) : (
         <Portfolio>
-          <Item src="./img/fiverr.png" alt="" />
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/fiverr.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
+                  <Desc>React-Node.Js-Express-Hooks-MongoDB-Stripe</Desc>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
         </Portfolio>
       )}
 
