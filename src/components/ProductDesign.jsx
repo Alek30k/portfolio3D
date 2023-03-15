@@ -30,16 +30,10 @@ const PortfolioItem = styled.div`
   border-radius: 10px;
 `;
 const Inner = styled.div`
-  // border-radius: 10px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-
-  // &:hover {
-  //   .Layer {
-  //     height: 100%;
-  //   }
-  // }
 `;
 const InnerImg = styled.div``;
 
@@ -55,7 +49,7 @@ const Item = styled.img`
 `;
 const Layer = styled.div`
   width: 100%;
-  height: 50%;
+  height: 30%;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(211, 20, 52));
   position: absolute;
   color: #fff;
@@ -76,7 +70,7 @@ const Portfolio = styled.div`
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
-  background-color: green;
+  gap: 10px;
 `;
 const Title = styled.h2``;
 const Enlace = styled.a``;
@@ -116,7 +110,39 @@ const ProductDesign = () => {
                 <Item src="./img/fiverr.png" alt="" />
                 <Layer>
                   <Title>Fiverr</Title>
-
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/fiverr.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/fiverr.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/fiverr.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
                 </Layer>
               </InnerImg>
