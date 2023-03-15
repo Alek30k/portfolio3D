@@ -90,23 +90,24 @@ const Button = styled.button`
 `;
 
 const ProductDesign = () => {
-   const [portfolioOpen, setPortfolioOpen] = useState(false);
+  const [portfolioOpen, setPortfolioOpen] = useState(false);
   return (
     <>
-      {portfolioOpen?<Canvas>
-        <Suspense fallback={null}>
-          <Stage environment="city" intensity={0.6}>
-            <Social_media_hologram />
-          </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
-        </Suspense>
-      </Canvas>
-      :
-      <Portfolio>
+      {portfolioOpen ? (
+        <Canvas>
+          <Suspense fallback={null}>
+            <Stage environment="city" intensity={0.6}>
+              <Social_media_hologram />
+            </Stage>
+            <OrbitControls enableZoom={false} autoRotate />
+          </Suspense>
+        </Canvas>
+      ) : (
+        <Portfolio>
           <PortfolioItem>
             <Inner>
               <InnerImg>
-                <Item src="./img/portfolio/fiverr.png" alt="" />
+                <Item src="./img/portfolio/face1.png" alt="" />
                 <Layer>
                   <Title>Fiverr</Title>
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
@@ -117,20 +118,9 @@ const ProductDesign = () => {
           <PortfolioItem>
             <Inner>
               <InnerImg>
-                <Item src="./img/portfolio/booking.png" alt="" />
+                <Item src="./img/portfolio/cap1.png" alt="" />
                 <Layer>
                   <Title>Feisbuk</Title>
-                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
-                </Layer>
-              </InnerImg>
-            </Inner>
-          </PortfolioItem>
-          <PortfolioItem>
-            <Inner>
-              <InnerImg>
-                <Item src="./img/portfolio/appCLima.png" alt="" />
-                <Layer>
-                  <Title>WeatherApp</Title>
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
                 </Layer>
               </InnerImg>

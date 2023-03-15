@@ -26,18 +26,45 @@ const Desc = styled.div`
 const Illustration = () => {
   return (
     <>
-      <Canvas>
-        <Suspense fallback={null}>
-          <Stage environment="city" intensity={0.6}>
-            <Shoe />
-          </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
-        </Suspense>
-      </Canvas>
-      <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.asdads
-      </Desc>
+      {portfolioOpen ? (
+        <Canvas>
+          <Suspense fallback={null}>
+            <Stage environment="city" intensity={0.6}>
+              <Shoe />
+            </Stage>
+            <OrbitControls enableZoom={false} autoRotate />
+          </Suspense>
+        </Canvas>
+      ) : (
+        <Portfolio>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/portfolio/face1.png" alt="" />
+                <Layer>
+                  <Title>Fiverr</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+          <PortfolioItem>
+            <Inner>
+              <InnerImg>
+                <Item src="./img/portfolio/cap1.png" alt="" />
+                <Layer>
+                  <Title>Feisbuk</Title>
+                  <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
+                </Layer>
+              </InnerImg>
+            </Inner>
+          </PortfolioItem>
+        </Portfolio>
+      )}
+
+      <Button onClick={() => setPortfolioOpen(!portfolioOpen)}>
+        PORTFOLIO
+      </Button>
     </>
   );
 };
