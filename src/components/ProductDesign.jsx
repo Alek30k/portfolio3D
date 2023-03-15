@@ -107,7 +107,7 @@ const ProductDesign = () => {
           <PortfolioItem>
             <Inner>
               <InnerImg>
-                <Item src="./img/fiverr.png" alt="" />
+                <Item src="./img/portfolio/fiverr.png" alt="" />
                 <Layer>
                   <Title>Fiverr</Title>
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
@@ -118,9 +118,9 @@ const ProductDesign = () => {
           <PortfolioItem>
             <Inner>
               <InnerImg>
-                <Item src="./img/fiverr.png" alt="" />
+                <Item src="./img/portfolio/booking.png" alt="" />
                 <Layer>
-                  <Title>Fiverr</Title>
+                  <Title>Feisbuk</Title>
                   <Enlace href="https://merry-bienenstitch-43a67e.netlify.app" />
                 </Layer>
               </InnerImg>
