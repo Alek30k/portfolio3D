@@ -78,11 +78,6 @@ const Portfolio = styled.div`
   margin-right: -15px;
   position: relative;
   background-color: green;
-
-  &:hover:before Layer {
-    background-color: blue;
-    color: yellow;
-  }
 `;
 const Title = styled.h2``;
 const Desc = styled.p``;
